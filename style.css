@@ -131,7 +131,6 @@ button:hover{
 }
 
 .intro-img{
-	height:470px;
 	width: 470px;
 	display: block;
 	margin-left: auto;
@@ -172,15 +171,62 @@ button:hover{
  	.nav-item{
  		padding: 0px 10px;
  	}*/
- 	.intro-img{
- 		height:400px;
- 		width: 400px; 
+ 	.intro{
+ 		padding: 0px 48px;
  	}
- 	.card-text{
-
+ 	.card-text h1{
+ 		font-size: 2.5rem;
+ 	}
+ 	.card-text p{
+ 		font-size: 1.25rem;
+ 	}
+ 	.intro-img{
+ 		width: 360px;
  	}
 
 }
+
+@media screen and (max-width: 930px){
+	.del{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 974px){
+	.intro{
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		margin-top: 140px;
+	}
+	.card-text{
+		width: 90%;
+		text-align: center;
+		grid-column: 1/2;
+	}
+	.img-div{
+		margin-top: 37px;
+		display: flex;
+		justify-content: center;
+	}
+	nav{
+		height: 64px;
+	}
+	.nav-item{
+		padding: 0px 8px;
+	}
+}
+
+@media screen and (max-width: 570px){
+ 	.conact-us{
+ 		display: none;
+ 	}
+ 	.intro-img{
+ 		width: 320px;
+ 	}
+}
+
+
 /* Grids starts*/ 
 .course-perks{
 	font-size: 1.5rem;
